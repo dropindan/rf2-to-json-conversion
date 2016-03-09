@@ -608,7 +608,9 @@ public class TransformerDiskBased {
                     if (!refsetsCount.containsKey(loopMember.getRefset())) {
                         refsetsCount.put(loopMember.getRefset(), 0);
                     }
-                    refsetsCount.put(loopMember.getRefset(), refsetsCount.get(loopMember.getRefset()) + 1);
+    				if (columns[2].equals("1")){
+    					refsetsCount.put(loopMember.getRefset(), refsetsCount.get(loopMember.getRefset()) + 1);
+    				}
 
 					count++;
 					if (count % 100000 == 0) {
@@ -668,8 +670,10 @@ public class TransformerDiskBased {
                     if (!refsetsCount.containsKey(loopMember.getRefset())) {
                         refsetsCount.put(loopMember.getRefset(), 0);
                     }
-                    refsetsCount.put(loopMember.getRefset(), refsetsCount.get(loopMember.getRefset()) + 1);
 
+    				if (columns[2].equals("1")){
+    					refsetsCount.put(loopMember.getRefset(), refsetsCount.get(loopMember.getRefset()) + 1);
+    				}
                     count++;
 					if (count % 100000 == 0) {
 						System.out.print(".");
@@ -728,8 +732,10 @@ public class TransformerDiskBased {
                     if (!refsetsCount.containsKey(loopMember.getRefset())) {
                         refsetsCount.put(loopMember.getRefset(), 0);
                     }
-                    refsetsCount.put(loopMember.getRefset(), refsetsCount.get(loopMember.getRefset()) + 1);
 
+    				if (columns[2].equals("1")){
+    					refsetsCount.put(loopMember.getRefset(), refsetsCount.get(loopMember.getRefset()) + 1);
+    				}
                     count++;
 					if (count % 100000 == 0) {
 						System.out.print(".");
@@ -787,8 +793,10 @@ public class TransformerDiskBased {
                     if (!refsetsCount.containsKey(loopMember.getRefset())) {
                         refsetsCount.put(loopMember.getRefset(), 0);
                     }
-                    refsetsCount.put(loopMember.getRefset(), refsetsCount.get(loopMember.getRefset()) + 1);
 
+    				if (columns[2].equals("1")){
+    					refsetsCount.put(loopMember.getRefset(), refsetsCount.get(loopMember.getRefset()) + 1);
+    				}
                     count++;
 					if (count % 100000 == 0) {
 						System.out.print(".");
